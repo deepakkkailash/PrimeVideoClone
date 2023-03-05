@@ -1,3 +1,107 @@
 *{
     box-sizing: border-box;
 }
+
+a{
+    color:white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main_container{
+    position: absolute;
+    top:8vh;
+    left:0;
+    width:100vw;
+    height:92vh;
+    background-color: #0f171e;
+}
+.Nav_Flex_container{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:8vh;
+    width:100vw;
+    background-color: #252e39;
+    display:grid;
+    grid-template-columns: 11% 6% 6% 6% 6% 6%;
+    grid-column-gap: 1px;
+    grid-template-areas: "logo home store channels categories mystuff ";
+    justify-items:start;
+}
+
+.prime-logo-nav{
+    width:10vw;
+    grid-area: "logo";
+ 
+}
+#nav-bar-actual-prime-logo{
+    width:120%;
+    float: left;
+}
+.Home_nav{
+    padding-top: 40px;
+    grid-area: "home";
+    width:5vw;
+}
+
+.Store_nav{
+    padding-top: 40px;
+    grid-area: "store";
+    width:5vw;
+}
+
+.Channels_nav{
+    padding-top: 40px;
+    grid-area: "chennels";
+    width:5vw;
+}
+
+.Categories_nav{
+    padding-top: 40px;
+    grid-area: "categories";
+    width:5vw;
+}
+.Mystuff_nav{
+    padding-top: 40px;
+    grid-area: "mystuff";
+    width:5vw;
+}
+
+.main_continue_watching{
+    position: absolute;
+    top:45vh;
+    left:2vw;
+    color:white;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: Amazon Ember,Amazon Arabic Ember,Arial,sans-serif!important;
+
+}
+
+.Main_image{
+    width:100vw;
+    height:40vh;
+}
+
+.Continue_watching_flex{
+    position: absolute;
+    top:50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+
+.Continue_watching_flex > *{
+    width:20vw;
+    height:20vh;
+    padding-left: 10px;
+}
+
+.Continue_watching_image{
+    width:100%;
+    height:100%
+}
