@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color:#0f171e;;
+    overflow:auto;
+    overflow-x: auto;
+}
 a{
     color:white;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 300;
     text-decoration: none;
 }
 
@@ -15,21 +20,22 @@ a{
     left:0;
     width:100vw;
     height:92vh;
-    background-color: #0f171e;
 }
 .Nav_Flex_container{
     position:absolute;
     top:0px;
     left:0px;
-    height:8vh;
+    height:15vh;
     width:100vw;
     background-color: #252e39;
     display:grid;
-    grid-template-columns: 11% 6% 6% 6% 6% 6%;
+    grid-template-columns: 11% 4% 4% 5% 6% 62% 3% 12%;
     grid-column-gap: 1px;
-    grid-template-areas: "logo home store channels categories mystuff ";
+    grid-template-areas: "logo home store channels categories mystuff pfp name";
     justify-items:start;
 }
+
+
 
 .prime-logo-nav{
     width:10vw;
@@ -40,6 +46,8 @@ a{
     width:120%;
     float: left;
 }
+
+
 .Home_nav{
     padding-top: 40px;
     grid-area: "home";
@@ -69,7 +77,31 @@ a{
     width:5vw;
 }
 
-.main_continue_watching{
+.Profile_nav{
+  
+    padding-top: 40px;
+    grid-area: "pfp";
+    width:2vw;
+    height:2vh;
+    border-radius: 50%;
+
+}
+.pfp_Profile{
+    width: 100%;
+}
+
+.name_nav{
+    grid-area:'name';
+    padding-top: 40px;
+    width:2vw;
+    height:2vh;
+    color: rgba(242,244,246,.7);
+    font-size: 15px;
+    
+    line-height: 22px;
+}
+
+#main_continue_watching{
     position: absolute;
     top:45vh;
     left:2vw;
@@ -80,9 +112,15 @@ a{
 
 }
 
+.Titular_image{
+    width:800px;
+}
+
+
 .Main_image{
-    width:100vw;
-    height:40vh;
+    width:100%;
+    height:38vh;
+    object-fit: contain;
 }
 
 .Continue_watching_flex{
@@ -99,9 +137,68 @@ a{
     width:20vw;
     height:20vh;
     padding-left: 10px;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
+.Continue_watching_flex>*:hover{
+    padding-left:0px;
+    border: solid 1px skyblue;
+    width:280px;
+    height:280px;
+}
 .Continue_watching_image{
     width:100%;
-    height:100%
+    height:100%;
+ 
 }
+
+
+#main_recommended_movies{
+    position: absolute;
+    top:80vh;
+    left:2vw;
+    color:white;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: Amazon Ember,Amazon Arabic Ember,Arial,sans-serif!important;
+}
+
+.Recommended_movies_grid{
+    position: absolute;
+    top:86vh;
+    left:1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*
+    grid-template-rows: 20vh 20vh;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+    */
+}
+
+
+
+.Recommended_movies_grid>*{
+    width:20%;
+    height:20%;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.Recommended_movies_grid>*:hover{
+    padding-left:0px;
+    border: solid 1px skyblue;
+    width:280px;
+    height:280px;
+}
+.Recommended_movies_image{
+    width:100%;
+    height:100%;
+}
+
+
+
+
