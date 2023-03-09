@@ -54,6 +54,10 @@ a{
     width:5vw;
 }
 
+.Home_nav >a{
+    text-decoration: underline;
+}
+
 .Store_nav{
     padding-top: 40px;
     grid-area: "store";
@@ -120,8 +124,41 @@ a{
     object-fit: contain;
     background-size:100% 100%;
     background-image: url("Images/titular_images/Farzi.webp");
+    transition-property: all;
 }
 
+.grid_of_switches{
+    position: absolute;
+    top:23vh;
+    left:50vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items:center;
+    grid-column-gap: 4px;
+}
+
+.grid_of_switches>*{
+    border-radius: 80%;
+    margin:none;
+    border:none;
+}
+ul li{
+    color:hsla(0,0%,100%,.6);
+    float:left;
+    padding-right: 30px ;   
+}
+
+#switch1:active ~ ul~ .grid_of_switches ~ .Titular_images{
+    background-image: url("Images/titular_images/Kranti.webp");
+}
+
+ul li:active,ul li:focus,ul li:visited{
+    color:white;
+}
+
+li::marker{
+    font-size:50px;
+}
 
 .Main_image{
     width:100%;
@@ -177,13 +214,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /*
-    grid-template-rows: 20vh 20vh;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-column-gap:20px;
-    grid-row-gap:20px;
-    */
 }
 
 
@@ -193,7 +223,7 @@ a{
     height:20%;
     padding-left: 10px;
     transition-property: all;
-    transition-duration: 500ms;
+    transition-duration: 1s;
 }
 
 .Recommended_movies_grid>*:hover{
@@ -208,6 +238,7 @@ a{
     height:100%;
 
 }
+
 
 
 
